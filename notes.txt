@@ -1,0 +1,31 @@
+
+Here is a code that explains about the .toString();
+
+Problem 1:
+
+import java.util.Scanner;  
+  
+public class StringBuilderToStringExample3 {  
+    public static void main(String[] args) {  
+        StringBuilder sb = new StringBuilder("");  
+          
+        System.out.print("enter your string value: ");  
+        Scanner sc = new Scanner(System.in);  
+        sb.append(sc.nextLine());  
+          
+        System.out.print("enter input data: ");  
+          String inputdata = sc.nextLine();   
+          sb.append(inputdata);  
+          String str = sb.toString();  
+        System.out.println("new string :"+str);   
+        sc.close();  
+  
+    }  
+}  
+
+
+O/P:-
+
+enter your string value: xyz
+enter input data: 123
+new string :xyz123
