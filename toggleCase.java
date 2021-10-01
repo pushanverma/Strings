@@ -5,7 +5,7 @@ public class toggleCase {
     
     public static String toggle(String s)
     {
-        StringBuilder sb=new StringBuilder("");
+        StringBuilder sb=new StringBuilder(s);
         for(int i=0;i<s.length();i++)
         {
             char ch =s.charAt(i);
@@ -29,7 +29,7 @@ public class toggleCase {
     {
         // suppose the string passes is PushanVerma then it will become -pUSHANvERMA
         Scanner scn =new Scanner(System.in);
-        String s=scn.nextLine();
+        String s=scn.next();
          System.out.println( toggle(s) );  
     }
 
